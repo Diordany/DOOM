@@ -1,6 +1,6 @@
-# DOOM
+# DOOM v1.10
 
-I had a bit of fun (and experienced some frustration) while trying to get the old DOOM code (released in 1997) from the [id-software repository](https://github.com/id-Software/DOOM) to run on my modern system. I managed to get it somewhat operational as a 32-bit executable on Linux, but I had to use Xephyr emulate a display that's suitable to run this version of DOOM. I experienced severe graphical anomalies:
+I had a bit of fun (and experienced some frustration) while trying to get the old DOOM code (released in 1997) from the [id-software repository](https://github.com/id-Software/DOOM) to run on my modern system. I managed to get it somewhat operational as a 32-bit executable on Linux, but I had to use Xephyr to emulate a display that's suitable to run this version of DOOM. I experienced severe graphical anomalies as you can see in this screenshot:
 
 ![xephyr.png](doc/img/xephyr.png)
 
