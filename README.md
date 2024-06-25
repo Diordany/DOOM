@@ -28,10 +28,30 @@ make clean
 You can run DOOM with:
 
 ```
-./linux/DOOM
+./linux/linuxxdoom
 ```
 
 In order to run this version of DOOM, your display has to support the 8-bit PseudoColor mode. Alternatively, if your display does not support this, it can be bypassed by connecting it to a nested X server like [Xephyr](https://wiki.archlinux.org/title/Xephyr).
+
+## Providing the Game Assets
+
+Make sure to have the DOOM assets in your working directory, valid wads include:
+
+|          |         |
+|:---------|:--------|
+| **doom.wad** | Original registered version of DOOM |
+| **doom1.wad** | Shareware version of DOOM |
+| **doomu.wad** | The Ultimate DOOM |
+| **doom2.wad** | DOOM II: Hell on Earth |
+| **doom2f.wad** | French version of DOOM II |
+| **plutonia.wad** | Final DOOM: The Plutonia Experiment |
+| **tnt.wad** | Final DOOM: TNT Evilution |
+
+If you want to store the assets elsewhere run DOOM with:
+
+```
+DOOMWADDIR=/path/to/assets ./linux/linuxxdoom
+```
 
 ## Running with Xephyr
 
@@ -46,7 +66,7 @@ Xephyr -br -noreset -screen 320x200x8 :1 &
 Then attach DOOM to the display with:
 
 ```
-./bin/DOOM -disp :1
+./linux/linuxxdoom -disp :1
 ```
 
 ## Setting the Resolution
